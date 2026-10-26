@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block title %}{{ title }}{% endblock %}{% block content %}<div class="form-card"><h1 class="h3 mb-3">{{ title }}</h1><form method="post">{% csrf_token %}{{ form.as_p }}<button class="btn btn-primary">{{ button }}</button> <a class="btn btn-outline-secondary" href="{% url 'dashboard' %}">Cancel</a></form></div>{% endblock %}
